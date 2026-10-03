@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viviré — We create the film of a life</title>
+<meta name="description" content="Viviré turns your photos, videos and memories into a cinematic short film: life stories, weddings, golden anniversaries and other moments worth telling.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎞️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">VIVIRÉ</div>
+  <div class="nav-links">
+    <a href="#what" data-i18n="nav_what">Was</a>
+    <a href="#why" data-i18n="nav_why">Warum</a>
+    <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+    <details class="lang-switch">
+     <summary><span id="lang-current">DE</span> ▾</summary>
+     <div class="langs lang-options">
+      <button data-lang="de">DE</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="es">ES</button>
+     </div>
+    </details>
+  </div>
+</header>
+
+<section class="hero">
+  <h1 data-i18n="hero_title">Dein Leben ist bereits eine Geschichte.</h1>
+  <p data-i18n="hero_sub">Wir machen einen Film daraus.</p>
+  <div class="scroll-cue">↓</div>
+</section>
+
+<section class="story">
+  <div class="beat image">
+    <img src="assets/lucia.jpg" alt="Lucia, a character from a Viviré film concept, lit in warm golden-hour light">
+  </div>
+  <div class="beat"><h2 data-i18n="story_1">ERINNERUNGEN VERBLASSEN.</h2></div>
+  <div class="beat"><h2 data-i18n="story_2">GESCHICHTEN BLEIBEN.</h2></div>
+  <div class="beat image">
+    <img src="assets/locket.jpg" alt="A hand holding an antique gold locket, a recurring symbol in a Viviré film concept">
+  </div>
+  <div class="beat"><h2 data-i18n="story_3">AUS DEINEN FOTOS.<br>DEINEN VIDEOS.<br>DEINEN ERINNERUNGEN.</h2></div>
+  <div class="beat"><h2 data-i18n="story_4">WIR ERSCHAFFEN DEN FILM<br>EINES LEBENS.</h2></div>
+  <div class="beat cta">
+    <a href="#contact" class="cta-link" data-i18n="story_cta">Erschaffe deinen →</a>
+  </div>
+</section>
+
+<section class="paper" id="what">
+  <div class="paper-inner">
+    <h2 data-i18n="what_title">Was ist Viviré?</h2>
+    <p data-i18n="what_body">Viviré verwandelt deine Fotos, Videos und Erinnerungen in einen filmischen Kurzfilm …</p>
+  </div>
+</section>
+
+<section class="paper" id="why">
+  <div class="paper-inner">
+    <h2 data-i18n="why_title">Warum Viviré?</h2>
+    <ul class="why-list">
+      <li data-i18n="why_1"></li>
+      <li data-i18n="why_2"></li>
+      <li data-i18n="why_3"></li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <h2 data-i18n="contact_title">Erzähl uns deine Geschichte</h2>
+    <p class="contact-sub" data-i18n="contact_sub"></p>
+
+    <form id="questionnaire">
+      <div class="field">
+        <label for="name" data-i18n="f_name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email" data-i18n="f_email">E-Mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="occasion" data-i18n="f_occasion">Anlass</label>
+        <select id="occasion" name="occasion"></select>
+      </div>
+      <div class="field">
+        <label for="materials" data-i18n="f_materials">Material</label>
+        <textarea id="materials" name="materials"></textarea>
+      </div>
+      <div class="field">
+        <label for="length" data-i18n="f_length">Länge</label>
+        <select id="length" name="length"></select>
+      </div>
+      <div class="field">
+        <label for="message" data-i18n="f_message">Nachricht</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <label class="checkbox-field">
+        <input type="checkbox" required>
+        <span data-i18n="f_consent"></span>
+      </label>
+      <button type="submit" class="submit-btn" data-i18n="f_submit">Absenden</button>
+      <p class="form-note" data-i18n="form_note"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <a href="impressum.html" data-i18n="footer_impressum">Impressum</a>
+    <a href="datenschutz.html" data-i18n="footer_privacy">Datenschutz</a>
+    <a href="terms.html" data-i18n="footer_terms">Nutzungsbedingungen</a>
+  </nav>
+  <div>VIVIRÉ — <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
