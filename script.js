@@ -6,10 +6,10 @@ const translations = {
     nav_what:"Was", nav_why:"Warum", nav_contact:"Kontakt",
     hero_title:"Dein Leben ist bereits eine Geschichte.",
     hero_sub:"Wir machen einen Film daraus.",
-    story_1:"ERINNERUNGEN VERBLASSEN.",
-    story_2:"GESCHICHTEN BLEIBEN.",
-    story_3:"AUS DEINEN FOTOS.<br>DEINEN VIDEOS.<br>DEINEN ERINNERUNGEN.",
-    story_4:"WIR ERSCHAFFEN DEN FILM<br>EINES LEBENS.",
+    //story_1:"ERINNERUNGEN VERBLASSEN.",
+    //story_2:"GESCHICHTEN BLEIBEN.",
+    //story_3:"AUS DEINEN FOTOS.<br>DEINEN VIDEOS.<br>DEINEN ERINNERUNGEN.",
+    //story_4:"WIR ERSCHAFFEN DEN FILM<br>EINES LEBENS.",
     story_cta:"Erschaffe deinen →",
     what_title:"Was ist Viviré?",
     what_body:"Viviré verwandelt deine Fotos, Videos und Erinnerungen in einen filmischen Kurzfilm, persönlich erzählt und mit Sorgfalt gestaltet. Kein beliebiges Zehn-Sekunden-KI-Video, sondern eine durchdachte Geschichte: Lebensgeschichten, Hochzeiten, goldene Hochzeitstage und andere Momente, die es wert sind, erzählt zu werden.",
@@ -30,16 +30,23 @@ const translations = {
     form_note:"Öffnet dein E-Mail-Programm mit einer vorausgefüllten Nachricht.",
     footer_rights:"Alle Rechte vorbehalten.", footer_impressum:"Impressum",
     footer_privacy:"Datenschutz", footer_terms:"Nutzungsbedingungen",
-    mail_subject:"Viviré - Anfrage von"
+    mail_subject:"Viviré - Anfrage von",
+    loc_cap_0:"ERINNERUNGEN VERBLASSEN.",
+    loc_cap_1:"GESCHICHTEN BLEIBEN.",
+    loc_cap_2:"AUS DEINEN FOTOS.",
+    loc_cap_3:"DEINEN VIDEOS.",
+    loc_cap_4:"DEINEN ERINNERUNGEN.",
+    loc_cap_5:"WIR ERSCHAFFEN DEN FILM",
+    loc_cap_6:"EINES LEBENS."
   },
   en: {
     nav_what:"What", nav_why:"Why", nav_contact:"Contact",
     hero_title:"Your life is already a story.",
     hero_sub:"We turn it into a film.",
-    story_1:"MEMORIES FADE.",
-    story_2:"STORIES STAY.",
-    story_3:"FROM YOUR PHOTOS.<br>YOUR VIDEOS.<br>YOUR MEMORIES.",
-    story_4:"WE CREATE THE FILM<br>OF A LIFE.",
+    //story_1:"MEMORIES FADE.",
+    //story_2:"STORIES STAY.",
+    //story_3:"FROM YOUR PHOTOS.<br>YOUR VIDEOS.<br>YOUR MEMORIES.",
+    //story_4:"WE CREATE THE FILM<br>OF A LIFE.",
     story_cta:"Create yours →",
     what_title:"What is Viviré?",
     what_body:"Viviré turns your photos, videos and memories into a cinematic short film — personal, crafted, and told with care. Not a generic ten-second AI clip, but a considered story: life histories, weddings, golden anniversaries, and other moments worth telling.",
@@ -60,16 +67,23 @@ const translations = {
     form_note:"Opens your email app with a pre-filled message.",
     footer_rights:"All rights reserved.", footer_impressum:"Impressum",
     footer_privacy:"Privacy", footer_terms:"Terms",
-    mail_subject:"Viviré - inquiry from"
+    mail_subject:"Viviré - inquiry from",
+    loc_cap_0:"MEMORIES FADE.",
+    loc_cap_1:"STORIES STAY.",
+    loc_cap_2:"FROM YOUR PHOTOS.",
+    loc_cap_3:"YOUR VIDEOS.",
+    loc_cap_4:"YOUR MEMORIES.",
+    loc_cap_5:"WE CREATE THE FILM",
+    loc_cap_6:"OF A LIFE."
   },
   es: {
     nav_what:"Qué es", nav_why:"Por qué", nav_contact:"Contacto",
     hero_title:"Tu vida ya es una historia.",
     hero_sub:"La convertimos en una película.",
-    story_1:"LOS RECUERDOS SE DESVANECEN.",
-    story_2:"LAS HISTORIAS PERDURAN.",
-    story_3:"DE TUS FOTOS.<br>TUS VIDEOS.<br>TUS RECUERDOS.",
-    story_4:"CREAMOS LA PELÍCULA<br>DE UNA VIDA.",
+    //story_1:"LOS RECUERDOS SE DESVANECEN.",
+    //story_2:"LAS HISTORIAS PERDURAN.",
+    //story_3:"DE TUS FOTOS.<br>TUS VIDEOS.<br>TUS RECUERDOS.",
+    //story_4:"CREAMOS LA PELÍCULA<br>DE UNA VIDA.",
     story_cta:"Crea la tuya →",
     what_title:"¿Qué es Viviré?",
     what_body:"Viviré convierte tus fotos, videos y recuerdos en un cortometraje cinematográfico, personal y elaborado con cuidado. No es un video genérico de IA de diez segundos, sino una historia pensada: biografías, bodas, bodas de oro y otros momentos que merecen ser contados.",
@@ -90,7 +104,14 @@ const translations = {
     form_note:"Abre tu programa de correo con un mensaje ya redactado.",
     footer_rights:"Todos los derechos reservados.", footer_impressum:"Aviso legal",
     footer_privacy:"Privacidad", footer_terms:"Términos",
-    mail_subject:"Viviré - solicitud de"
+    mail_subject:"Viviré - solicitud de",
+    loc_cap_0:"LOS RECUERDOS SE DESVANECEN.",
+    loc_cap_1:"LAS HISTORIAS PERDURAN.",
+    loc_cap_2:"DE TUS FOTOS.",
+    loc_cap_3:"TUS VIDEOS.",
+    loc_cap_4:"TUS RECUERDOS.",
+    loc_cap_5:"CREAMOS LA PELÍCULA",
+    loc_cap_6:"DE UNA VIDA."
   }
 };
 
@@ -125,6 +146,46 @@ function fillSelect(id, opts){
   });
   if (current !== "") sel.value = current;
 }
+
+function updateLocketScroll(){
+  const section = document.getElementById("locket-scroll");
+  if (!section) return;
+  const frames = document.querySelectorAll(".locket-frame");
+  const rect = section.getBoundingClientRect();
+  const total = section.offsetHeight - window.innerHeight;
+  let progress = total > 0 ? -rect.top / total : 0;
+  progress = Math.max(0, Math.min(1, progress));
+
+  const n = frames.length;
+  const pos = progress * (n - 1);
+  const idx = Math.min(Math.floor(pos), n - 2 < 0 ? 0 : n - 2);
+  const blend = pos - idx;
+
+  frames.forEach((f, i) => {
+    if (i === idx) f.style.opacity = 1 - blend;
+    else if (i === idx + 1) f.style.opacity = blend;
+    else f.style.opacity = 0;
+  });
+
+  const dominant = blend < 0.5 ? idx : idx + 1;
+  const caption = document.getElementById("locket-caption");
+  const key = `loc_cap_${dominant}`;
+  if (caption && caption.getAttribute("data-current") !== key){
+    caption.setAttribute("data-current", key);
+    const t = translations[window.__currentLang || "de"];
+    caption.style.opacity = 0;
+    setTimeout(()=>{
+      caption.textContent = t[key] || "";
+      caption.style.opacity = 1;
+    }, 200);
+  }
+}
+
+window.addEventListener("scroll", updateLocketScroll, {passive:true});
+window.addEventListener("resize", updateLocketScroll);
+updateLocketScroll();
+
+
 
 document.addEventListener("DOMContentLoaded", ()=>{
   let saved = "de";
