@@ -260,6 +260,7 @@ ${message}`;
   const poster = wrap.querySelector(".video-poster");
   const iframe = document.createElement("iframe");
   iframe.src = "https://www.youtube.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
+  //iframe.src = "https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0";
   iframe.title = "Viviré — promo video";
   iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
   iframe.allowFullscreen = true;
