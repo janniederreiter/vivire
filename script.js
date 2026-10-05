@@ -1,5 +1,5 @@
 // ===== REPLACE THIS with the real inbox you want questionnaire replies sent to =====
-const CONTACT_EMAIL = "hello@viviere.studio";
+const CONTACT_EMAIL = "hellovivire@gmail.com";
 
 const translations = {
   de: {
@@ -37,7 +37,8 @@ const translations = {
     loc_cap_3:"DEINEN VIDEOS.",
     loc_cap_4:"DEINEN ERINNERUNGEN.",
     loc_cap_5:"WIR ERSCHAFFEN DEN FILM",
-    loc_cap_6:"EINES LEBENS."
+    loc_cap_6:"EINES LEBENS.",
+    promo_title:"Der Film"
   },
   en: {
     nav_what:"What", nav_why:"Why", nav_contact:"Contact",
@@ -74,7 +75,8 @@ const translations = {
     loc_cap_3:"YOUR VIDEOS.",
     loc_cap_4:"YOUR MEMORIES.",
     loc_cap_5:"WE CREATE THE FILM",
-    loc_cap_6:"OF A LIFE."
+    loc_cap_6:"OF A LIFE.",
+    promo_title:"The Film"
   },
   es: {
     nav_what:"Qué es", nav_why:"Por qué", nav_contact:"Contacto",
@@ -111,7 +113,8 @@ const translations = {
     loc_cap_3:"TUS VIDEOS.",
     loc_cap_4:"TUS RECUERDOS.",
     loc_cap_5:"CREAMOS LA PELÍCULA",
-    loc_cap_6:"DE UNA VIDA."
+    loc_cap_6:"DE UNA VIDA.",
+    promo_title:"La película"
   }
 };
 
@@ -181,7 +184,17 @@ function updateLocketScroll(){
   }
 }
 
-window.addEventListener("scroll", updateLocketScroll, {passive:true});
+let locketTicking = false;
+function onLocketScroll(){
+  if (!locketTicking){
+    requestAnimationFrame(()=>{
+      updateLocketScroll();
+      locketTicking = false;
+    });
+    locketTicking = true;
+  }
+}
+window.addEventListener("scroll", onLocketScroll, {passive:true});
 window.addEventListener("resize", updateLocketScroll);
 updateLocketScroll();
 
@@ -241,4 +254,19 @@ ${message}`;
       window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
+
+ document.getElementById("play-btn")?.addEventListener("click", function(){
+  const wrap = document.getElementById("video-wrap");
+  const poster = wrap.querySelector(".video-poster");
+  const iframe = document.createElement("iframe");
+  iframe.src = "https://www.youtube-nocookie.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
+  iframe.title = "Viviré — promo video";
+  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+  iframe.allowFullscreen = true;
+  iframe.style.border = "0";
+  iframe.width = "100%";
+  iframe.height = "100%";
+  poster.replaceWith(iframe);
+  this.remove();
+});
 });
