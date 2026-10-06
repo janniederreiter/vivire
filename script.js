@@ -29,7 +29,7 @@ const translations = {
     f_submit:"Absenden",
     form_note:"Öffnet dein E-Mail-Programm mit einer vorausgefüllten Nachricht.",
     footer_rights:"Alle Rechte vorbehalten.", footer_impressum:"Impressum",
-    footer_privacy:"Datenschutz", footer_terms:"Nutzungsbedingungen",
+    footer_privacy:"Datenschutz", footer_terms:"Nutzungsbedingungen", footer_widerruf:"Widerruf",
     mail_subject:"Viviré - Anfrage von",
     loc_cap_0:"ERINNERUNGEN VERBLASSEN.",
     loc_cap_1:"GESCHICHTEN BLEIBEN.",
@@ -66,7 +66,7 @@ const translations = {
     f_consent:"I confirm I hold the rights to the submitted photos/videos and, where applicable, the consent of the people shown.",
     f_submit:"Send",
     form_note:"Opens your email app with a pre-filled message.",
-    footer_rights:"All rights reserved.", footer_impressum:"Impressum",
+    footer_rights:"All rights reserved.", footer_impressum:"Impressum",footer_widerruf:"Widerruf",
     footer_privacy:"Privacy", footer_terms:"Terms",
     mail_subject:"Viviré - inquiry from",
     loc_cap_0:"MEMORIES FADE.",
@@ -104,7 +104,7 @@ const translations = {
     f_consent:"Confirmo que tengo los derechos sobre las fotos/videos enviados y, en su caso, el consentimiento de las personas que aparecen.",
     f_submit:"Enviar",
     form_note:"Abre tu programa de correo con un mensaje ya redactado.",
-    footer_rights:"Todos los derechos reservados.", footer_impressum:"Aviso legal",
+    footer_rights:"Todos los derechos reservados.", footer_impressum:"Aviso legal", footer_widerruf:"Widerruf",
     footer_privacy:"Privacidad", footer_terms:"Términos",
     mail_subject:"Viviré - solicitud de",
     loc_cap_0:"LOS RECUERDOS SE DESVANECEN.",
@@ -259,8 +259,8 @@ ${message}`;
   const wrap = document.getElementById("video-wrap");
   const poster = wrap.querySelector(".video-poster");
   const iframe = document.createElement("iframe");
-  iframe.src = "https://www.youtube.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
-  //iframe.src = "https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0";
+  //iframe.src = "https://www.youtube.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
+  iframe.src = "https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0";
   iframe.title = "Viviré — promo video";
   iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
   iframe.allowFullscreen = true;
