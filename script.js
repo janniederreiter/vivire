@@ -38,7 +38,7 @@ const translations = {
     loc_cap_4:"DEINEN ERINNERUNGEN.",
     loc_cap_5:"WIR ERSCHAFFEN DEN FILM",
     loc_cap_6:"EINES LEBENS.",
-    promo_title:"Der Film"
+    promo_title:"Promo Video"
   },
   en: {
     nav_what:"What", nav_why:"Why", nav_contact:"Contact",
@@ -76,7 +76,7 @@ const translations = {
     loc_cap_4:"YOUR MEMORIES.",
     loc_cap_5:"WE CREATE THE FILM",
     loc_cap_6:"OF A LIFE.",
-    promo_title:"The Film"
+    promo_title:"Promo Video"
   },
   es: {
     nav_what:"Qué es", nav_why:"Por qué", nav_contact:"Contacto",
@@ -114,7 +114,7 @@ const translations = {
     loc_cap_4:"TUS RECUERDOS.",
     loc_cap_5:"CREAMOS LA PELÍCULA",
     loc_cap_6:"DE UNA VIDA.",
-    promo_title:"La película"
+    promo_title:"Promo Video"
   }
 };
 
