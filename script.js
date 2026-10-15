@@ -116,6 +116,101 @@ const translations = {
     loc_cap_6:"DE UNA VIDA.",
     promo_title:"Promo Video"
   }
+  it: {
+    nav_what:"Cos'è", nav_why:"Perché", nav_contact:"Contatto",
+hero_title:"La tua vita è già una storia.",
+hero_sub:"Noi la trasformiamo in un film.",
+//story_1:"I RICORDI SVANISCONO.",
+//story_2:"LE STORIE RESTANO.",
+//story_3:"DALLE TUE FOTO.<br>I TUOI VIDEO.<br>I TUOI RICORDI.",
+//story_4:"CREIAMO IL FILM<br>DI UNA VITA.",
+story_cta:"Crea il tuo →",
+what_title:"Cos'è Viviré?",
+what_body:"Viviré trasforma le tue foto, i tuoi video e i tuoi ricordi in un cortometraggio cinematografico, personale e realizzato con cura. Non è un generico video IA di dieci secondi, ma una storia pensata: biografie, matrimoni, nozze d'oro e altri momenti che meritano di essere raccontati.",
+why_title:"Perché Viviré?",
+why_1:"Viviré ti promette che il tuo ricordo non svanirà mai, resterà con te. Non solo nella tua memoria, ma nelle tue mani, pronto per essere mostrato a chi ami. Vera cura artigianale, non un generatore casuale: ogni scena viene costruita insieme a te e perfezionata finché non è quella giusta.",
+why_2:"Più del semplice movimento: le tue foto vengono inserite in nuovi momenti credibili, non semplicemente animate.",
+why_3:"Mantieni tu il controllo: puoi dare forma e correggere ogni passaggio.",
+contact_title:"Raccontaci la tua storia",
+contact_sub:"Stiamo costruendo Viviré proprio ora. Non ci sono ancora prezzi o pacchetti fissi — prima vorremmo capire la storia che vuoi raccontare.",
+f_name:"Nome", f_email:"Indirizzo e-mail", f_occasion:"Occasione",
+f_occasion_opts:["Biografia","Matrimonio","Nozze d'oro / anniversario","Altro"],
+f_materials:"Che materiale hai? (foto, video, registrazioni vocali …)",
+f_length:"Durata desiderata",
+f_length_opts:["~2-3 minuti","~5 minuti","10+ minuti","Non lo so ancora"],
+f_message:"Raccontaci brevemente la storia / gli aneddoti",
+f_consent:"Confermo di avere i diritti sulle foto/video inviati e, se applicabile, il consenso delle persone raffigurate.",
+f_submit:"Invia",
+form_note:"Apre il tuo programma di posta elettronica con un messaggio già preparato.",
+footer_rights:"Tutti i diritti riservati.", footer_impressum:"Note legali", footer_widerruf:"Diritto di recesso",
+footer_privacy:"Privacy", footer_terms:"Termini",
+mail_subject:"Viviré - richiesta per",
+loc_cap_0:"I RICORDI SVANISCONO.",
+loc_cap_1:"LE STORIE RESTANO.",
+loc_cap_2:"DALLE TUE FOTO.",
+loc_cap_3:"I TUOI VIDEO.",
+loc_cap_4:"I TUOI RICORDI.",
+loc_cap_5:"CREIAMO IL FILM",
+loc_cap_6:"DI UNA VITA.",
+promo_title:"Video promozionale"  
+  }
+  // Navigation / language
+  nav_about: "Chi siamo",
+  nav_how: "Come funziona",
+  nav_contact: "Contatti",
+
+  // Hero
+  hero_title: "Il film di una vita",
+  hero_subtitle: "Trasformiamo i tuoi ricordi in un film.",
+  hero_cta: "Raccontaci la tua storia",
+
+  // General brand copy
+  intro_title: "I ricordi meritano di essere vissuti, non solo conservati.",
+  intro_text:
+    "Viviré trasforma fotografie, video, voci e ricordi in un film personale che racconta una vita attraverso immagini, emozioni e storie.",
+
+  // How it works
+  how_title: "Come funziona",
+
+  how_1_title: "Raccontaci la tua storia",
+  how_1_text:
+    "Condividi con noi le persone, i momenti e i ricordi che vuoi preservare.",
+
+  how_2_title: "Condividi i tuoi ricordi",
+  how_2_text:
+    "Fotografie, video, registrazioni audio e storie ci aiutano a ricostruire il mondo che vuoi raccontare.",
+
+  how_3_title: "Creiamo il tuo film",
+  how_3_text:
+    "Uniamo i tuoi ricordi a scene artistiche create con l'aiuto dell'intelligenza artificiale per dare vita alla tua storia.",
+
+  // AI / artistic nature
+  ai_title: "Ispirato a ricordi reali. Creato come un'opera cinematografica.",
+  ai_text:
+    "Le scene generate da Viviré sono interpretazioni artistiche ispirate a persone, fotografie e ricordi reali. Non sono registrazioni autentiche degli eventi rappresentati e non hanno lo scopo di ricostruire la realtà in modo perfettamente fedele.",
+
+  // Emotional positioning
+  memory_title: "Una storia che rimane.",
+  memory_text:
+    "Viviré promette che il tuo ricordo non svanirà. Rimarrà con te — non solo nella tua memoria, ma nelle tue mani, pronto per essere condiviso con le persone che ami.",
+
+  // Contact / form
+  form_title: "Raccontaci la tua storia",
+  form_name: "Nome",
+  form_email: "E-mail",
+  form_occasion: "Occasione",
+  form_length: "Durata desiderata",
+  form_material: "Quale materiale hai a disposizione?",
+  form_message: "Raccontaci qualcosa della storia",
+  form_submit: "Invia richiesta",
+
+  // Footer
+  footer_impressum: "Note legali",
+  footer_privacy: "Privacy",
+  footer_terms: "Termini e condizioni",
+  footer_widerruf: "Diritto di recesso",
+  footer_rights: "Tutti i diritti riservati."
+}
 };
 
 function applyLang(lang){
