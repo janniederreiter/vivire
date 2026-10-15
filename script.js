@@ -39,7 +39,9 @@ const translations = {
     loc_cap_4:"DEINEN ERINNERUNGEN.",
     loc_cap_5:"WIR ERSCHAFFEN DEN FILM",
     loc_cap_6:"EINES LEBENS.",
-    promo_title:"Promo Video"
+    promo_title:"Promo Video",
+    form_success:"Vielen Dank! Deine Anfrage wurde erfolgreich gesendet.",
+    form_error:"Leider ist etwas schiefgelaufen. Bitte versuche es erneut oder schreibe uns direkt an hellovivire@gmail.com."
   },
 
   en: {
@@ -79,7 +81,9 @@ const translations = {
     loc_cap_4:"YOUR MEMORIES.",
     loc_cap_5:"WE CREATE THE FILM",
     loc_cap_6:"OF A LIFE.",
-    promo_title:"Promo Video"
+    promo_title:"Promo Video",
+    form_success:"Thank you! Your inquiry has been sent successfully.",
+    form_error:"Something went wrong. Please try again or contact us directly at hellovivire@gmail.com."
   },
 
   es: {
@@ -119,7 +123,9 @@ const translations = {
     loc_cap_4:"TUS RECUERDOS.",
     loc_cap_5:"CREAMOS LA PELÍCULA",
     loc_cap_6:"DE UNA VIDA.",
-    promo_title:"Promo Video"
+    promo_title:"Promo Video",
+    form_success:"¡Gracias! Tu solicitud se ha enviado correctamente.",
+    form_error:"Algo ha salido mal. Inténtalo de nuevo o escríbenos directamente a hellovivire@gmail.com."
   },
 
   it: {
@@ -159,7 +165,9 @@ const translations = {
     loc_cap_4:"I TUOI RICORDI.",
     loc_cap_5:"CREIAMO IL FILM",
     loc_cap_6:"DI UNA VITA.",
-    promo_title:"Video promozionale"
+    promo_title:"Video promozionale",
+    form_success:"Grazie! La tua richiesta è stata inviata con successo.",
+    form_error:"Qualcosa è andato storto. Riprova oppure scrivici direttamente a hellovivire@gmail.com."
   }
 };
 
@@ -379,42 +387,78 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }
 
 
-  // questionnaire -> mailto
-  const form = document.getElementById("questionnaire");
+ const FORM_ID = "xjygjrqn";
 
-  if (form){
-    form.addEventListener("submit", (e)=>{
-      e.preventDefault();
+const form = document.getElementById("questionnaire");
+const formStatus = document.getElementById("form-status");
 
-      const t = translations[window.__currentLang || "en"];
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const occasion =
-        t.f_occasion_opts[form.occasion.value] || "";
-      const materials = form.materials.value.trim();
-      const length =
-        t.f_length_opts[form.length.value] || "";
-      const message = form.message.value.trim();
+    const t = translations[window.__currentLang || "en"];
+    const submitButton = form.querySelector('button[type="submit"]');
 
-      const subject = `${t.mail_subject} ${name}`;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const occasion =
+      t.f_occasion_opts[form.occasion.value] || "";
+    const materials = form.materials.value.trim();
+    const length =
+      t.f_length_opts[form.length.value] || "";
+    const message = form.message.value.trim();
 
-      const body =
-`${t.f_name}: ${name}
-${t.f_email}: ${email}
-${t.f_occasion}: ${occasion}
-${t.f_length}: ${length}
+    const data = {
+      name,
+      email,
+      occasion,
+      length,
+      materials,
+      message,
+      _subject: `${t.mail_subject} ${name}`
+    };
 
-${t.f_materials}
-${materials}
+    try {
+      submitButton.disabled = true;
 
-${t.f_message}
-${message}`;
+      if (formStatus) {
+        formStatus.textContent = "";
+      }
 
-      window.location.href =
-        `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
-  }
+      const response = await fetch(
+        `https://formspree.io/f/${FORM_ID}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(data)
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
+
+      form.reset();
+
+      if (formStatus) {
+        formStatus.textContent = t.form_success;
+      }
+
+    } catch (error) {
+      console.error(error);
+
+      if (formStatus) {
+        formStatus.textContent = t.form_error;
+      }
+
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+}
 
 
   document
