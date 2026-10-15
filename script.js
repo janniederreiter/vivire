@@ -12,7 +12,7 @@ const translations = {
     //story_4:"WIR ERSCHAFFEN DEN FILM<br>EINES LEBENS.",
     story_cta:"Erschaffe deinen →",
     what_title:"Was ist Viviré?",
-    what_body:"Viviré verwandelt deine Fotos, Videos und Erinnerungen in einen filmischen Kurzfilm, persönlich erzählt und mit Sorgfalt gestaltet.",
+    what_body:"Viviré verwandelt deine Fotos, Videos und Erinnerungen in einen cinematographischen Kurzfilm, persönlich erzählt und mit Sorgfalt gestaltet.",
     what_body_2:"Kein beliebiges Zehn-Sekunden-KI-Video, sondern eine durchdachte Geschichte: Lebensgeschichten, Hochzeiten, goldene Hochzeitstage und andere Momente, die es wert sind, erzählt zu werden.",
     why_title:"Warum Viviré?",
     why_1:"Viviré („Ich werde leben“ auf Spanisch) verspricht, dass deine Erinnerung niemals verblassen wird. Sie bleibt bei dir nicht nur in deinem Gedächtnis, sondern auch in deinen Händen, bereit, mit den Menschen geteilt zu werden, die du liebst. Echte Handwerkskunst statt Zufallsgenerator - jede Szene entsteht gemeinsam mit dir.",
