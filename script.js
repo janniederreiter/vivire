@@ -40,6 +40,7 @@ const translations = {
     loc_cap_6:"EINES LEBENS.",
     promo_title:"Promo Video"
   },
+
   en: {
     nav_what:"What", nav_why:"Why", nav_contact:"Contact",
     hero_title:"Your life is already a story.",
@@ -66,7 +67,7 @@ const translations = {
     f_consent:"I confirm I hold the rights to the submitted photos/videos and, where applicable, the consent of the people shown.",
     f_submit:"Send",
     form_note:"Opens your email app with a pre-filled message.",
-    footer_rights:"All rights reserved.", footer_impressum:"Impressum",footer_widerruf:"Right of Withdrawal",
+    footer_rights:"All rights reserved.", footer_impressum:"Impressum", footer_widerruf:"Right of Withdrawal",
     footer_privacy:"Privacy", footer_terms:"Terms",
     mail_subject:"Viviré - inquiry from",
     loc_cap_0:"MEMORIES FADE.",
@@ -78,6 +79,7 @@ const translations = {
     loc_cap_6:"OF A LIFE.",
     promo_title:"Promo Video"
   },
+
   es: {
     nav_what:"Qué es", nav_why:"Por qué", nav_contact:"Contacto",
     hero_title:"Tu vida ya es una historia.",
@@ -115,148 +117,155 @@ const translations = {
     loc_cap_5:"CREAMOS LA PELÍCULA",
     loc_cap_6:"DE UNA VIDA.",
     promo_title:"Promo Video"
-  }
+  },
+
   it: {
     nav_what:"Cos'è", nav_why:"Perché", nav_contact:"Contatto",
-hero_title:"La tua vita è già una storia.",
-hero_sub:"Noi la trasformiamo in un film.",
-//story_1:"I RICORDI SVANISCONO.",
-//story_2:"LE STORIE RESTANO.",
-//story_3:"DALLE TUE FOTO.<br>I TUOI VIDEO.<br>I TUOI RICORDI.",
-//story_4:"CREIAMO IL FILM<br>DI UNA VITA.",
-story_cta:"Crea il tuo →",
-what_title:"Cos'è Viviré?",
-what_body:"Viviré trasforma le tue foto, i tuoi video e i tuoi ricordi in un cortometraggio cinematografico, personale e realizzato con cura. Non è un generico video IA di dieci secondi, ma una storia pensata: biografie, matrimoni, nozze d'oro e altri momenti che meritano di essere raccontati.",
-why_title:"Perché Viviré?",
-why_1:"Viviré ti promette che il tuo ricordo non svanirà mai, resterà con te. Non solo nella tua memoria, ma nelle tue mani, pronto per essere mostrato a chi ami. Vera cura artigianale, non un generatore casuale: ogni scena viene costruita insieme a te e perfezionata finché non è quella giusta.",
-why_2:"Più del semplice movimento: le tue foto vengono inserite in nuovi momenti credibili, non semplicemente animate.",
-why_3:"Mantieni tu il controllo: puoi dare forma e correggere ogni passaggio.",
-contact_title:"Raccontaci la tua storia",
-contact_sub:"Stiamo costruendo Viviré proprio ora. Non ci sono ancora prezzi o pacchetti fissi — prima vorremmo capire la storia che vuoi raccontare.",
-f_name:"Nome", f_email:"Indirizzo e-mail", f_occasion:"Occasione",
-f_occasion_opts:["Biografia","Matrimonio","Nozze d'oro / anniversario","Altro"],
-f_materials:"Che materiale hai? (foto, video, registrazioni vocali …)",
-f_length:"Durata desiderata",
-f_length_opts:["~2-3 minuti","~5 minuti","10+ minuti","Non lo so ancora"],
-f_message:"Raccontaci brevemente la storia / gli aneddoti",
-f_consent:"Confermo di avere i diritti sulle foto/video inviati e, se applicabile, il consenso delle persone raffigurate.",
-f_submit:"Invia",
-form_note:"Apre il tuo programma di posta elettronica con un messaggio già preparato.",
-footer_rights:"Tutti i diritti riservati.", footer_impressum:"Note legali", footer_widerruf:"Diritto di recesso",
-footer_privacy:"Privacy", footer_terms:"Termini",
-mail_subject:"Viviré - richiesta per",
-loc_cap_0:"I RICORDI SVANISCONO.",
-loc_cap_1:"LE STORIE RESTANO.",
-loc_cap_2:"DALLE TUE FOTO.",
-loc_cap_3:"I TUOI VIDEO.",
-loc_cap_4:"I TUOI RICORDI.",
-loc_cap_5:"CREIAMO IL FILM",
-loc_cap_6:"DI UNA VITA.",
-promo_title:"Video promozionale"  
+    hero_title:"La tua vita è già una storia.",
+    hero_sub:"Noi la trasformiamo in un film.",
+    //story_1:"I RICORDI SVANISCONO.",
+    //story_2:"LE STORIE RESTANO.",
+    //story_3:"DALLE TUE FOTO.<br>I TUOI VIDEO.<br>I TUOI RICORDI.",
+    //story_4:"CREIAMO IL FILM<br>DI UNA VITA.",
+    story_cta:"Crea il tuo →",
+    what_title:"Cos'è Viviré?",
+    what_body:"Viviré trasforma le tue foto, i tuoi video e i tuoi ricordi in un cortometraggio cinematografico, personale e realizzato con cura. Non è un generico video IA di dieci secondi, ma una storia pensata: biografie, matrimoni, nozze d'oro e altri momenti che meritano di essere raccontati.",
+    why_title:"Perché Viviré?",
+    why_1:"Viviré ti promette che il tuo ricordo non svanirà mai, resterà con te. Non solo nella tua memoria, ma nelle tue mani, pronto per essere mostrato a chi ami. Vera cura artigianale, non un generatore casuale: ogni scena viene costruita insieme a te e perfezionata finché non è quella giusta.",
+    why_2:"Più del semplice movimento: le tue foto vengono inserite in nuovi momenti credibili, non semplicemente animate.",
+    why_3:"Mantieni tu il controllo: puoi dare forma e correggere ogni passaggio.",
+    contact_title:"Raccontaci la tua storia",
+    contact_sub:"Stiamo costruendo Viviré proprio ora. Non ci sono ancora prezzi o pacchetti fissi — prima vorremmo capire la storia che vuoi raccontare.",
+    f_name:"Nome", f_email:"Indirizzo e-mail", f_occasion:"Occasione",
+    f_occasion_opts:["Biografia","Matrimonio","Nozze d'oro / anniversario","Altro"],
+    f_materials:"Che materiale hai? (foto, video, registrazioni vocali …)",
+    f_length:"Durata desiderata",
+    f_length_opts:["~2-3 minuti","~5 minuti","10+ minuti","Non lo so ancora"],
+    f_message:"Raccontaci brevemente la storia / gli aneddoti",
+    f_consent:"Confermo di avere i diritti sulle foto/video inviati e, se applicabile, il consenso delle persone raffigurate.",
+    f_submit:"Invia",
+    form_note:"Apre il tuo programma di posta elettronica con un messaggio già preparato.",
+    footer_rights:"Tutti i diritti riservati.", footer_impressum:"Note legali", footer_widerruf:"Diritto di recesso",
+    footer_privacy:"Privacy", footer_terms:"Termini",
+    mail_subject:"Viviré - richiesta per",
+    loc_cap_0:"I RICORDI SVANISCONO.",
+    loc_cap_1:"LE STORIE RESTANO.",
+    loc_cap_2:"DALLE TUE FOTO.",
+    loc_cap_3:"I TUOI VIDEO.",
+    loc_cap_4:"I TUOI RICORDI.",
+    loc_cap_5:"CREIAMO IL FILM",
+    loc_cap_6:"DI UNA VITA.",
+    promo_title:"Video promozionale"
   }
-  // Navigation / language
-  nav_about: "Chi siamo",
-  nav_how: "Come funziona",
-  nav_contact: "Contatti",
-
-  // Hero
-  hero_title: "Il film di una vita",
-  hero_subtitle: "Trasformiamo i tuoi ricordi in un film.",
-  hero_cta: "Raccontaci la tua storia",
-
-  // General brand copy
-  intro_title: "I ricordi meritano di essere vissuti, non solo conservati.",
-  intro_text:
-    "Viviré trasforma fotografie, video, voci e ricordi in un film personale che racconta una vita attraverso immagini, emozioni e storie.",
-
-  // How it works
-  how_title: "Come funziona",
-
-  how_1_title: "Raccontaci la tua storia",
-  how_1_text:
-    "Condividi con noi le persone, i momenti e i ricordi che vuoi preservare.",
-
-  how_2_title: "Condividi i tuoi ricordi",
-  how_2_text:
-    "Fotografie, video, registrazioni audio e storie ci aiutano a ricostruire il mondo che vuoi raccontare.",
-
-  how_3_title: "Creiamo il tuo film",
-  how_3_text:
-    "Uniamo i tuoi ricordi a scene artistiche create con l'aiuto dell'intelligenza artificiale per dare vita alla tua storia.",
-
-  // AI / artistic nature
-  ai_title: "Ispirato a ricordi reali. Creato come un'opera cinematografica.",
-  ai_text:
-    "Le scene generate da Viviré sono interpretazioni artistiche ispirate a persone, fotografie e ricordi reali. Non sono registrazioni autentiche degli eventi rappresentati e non hanno lo scopo di ricostruire la realtà in modo perfettamente fedele.",
-
-  // Emotional positioning
-  memory_title: "Una storia che rimane.",
-  memory_text:
-    "Viviré promette che il tuo ricordo non svanirà. Rimarrà con te — non solo nella tua memoria, ma nelle tue mani, pronto per essere condiviso con le persone che ami.",
-
-  // Contact / form
-  form_title: "Raccontaci la tua storia",
-  form_name: "Nome",
-  form_email: "E-mail",
-  form_occasion: "Occasione",
-  form_length: "Durata desiderata",
-  form_material: "Quale materiale hai a disposizione?",
-  form_message: "Raccontaci qualcosa della storia",
-  form_submit: "Invia richiesta",
-
-  // Footer
-  footer_impressum: "Note legali",
-  footer_privacy: "Privacy",
-  footer_terms: "Termini e condizioni",
-  footer_widerruf: "Diritto di recesso",
-  footer_rights: "Tutti i diritti riservati."
-}
 };
 
-function applyLang(lang){
+
+const supportedLanguages = ["de", "en", "es", "it"];
+
+
+// Apply a language to the page.
+// savePreference should ONLY be true when the user manually selects a language.
+function applyLang(lang, savePreference = false){
+  if (!supportedLanguages.includes(lang)) {
+    lang = "en";
+  }
+
   const t = translations[lang];
+
   document.documentElement.lang = lang;
+
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const key = el.getAttribute("data-i18n");
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
+
   // rebuild select options
   fillSelect("occasion", t.f_occasion_opts);
   fillSelect("length", t.f_length_opts);
+
   document.querySelectorAll(".langs button").forEach(b=>{
     b.classList.toggle("active", b.dataset.lang === lang);
   });
-  document.getElementById("lang-current").textContent = lang.toUpperCase();
-  try { localStorage.setItem("viviere_lang", lang); } catch(e) {}
+
+  const currentLangDisplay = document.getElementById("lang-current");
+  if (currentLangDisplay) {
+    currentLangDisplay.textContent = lang.toUpperCase();
+  }
+
+  // Only remember an explicit manual language choice.
+  if (savePreference) {
+    try {
+      localStorage.setItem("viviere_lang", lang);
+    } catch(e) {}
+  }
+
   window.__currentLang = lang;
 }
+
+
+// Priority:
+// 1. Previously saved manual choice
+// 2. Browser language, if supported
+// 3. English fallback
+function getInitialLanguage() {
+  try {
+    const savedLanguage = localStorage.getItem("viviere_lang");
+
+    if (
+      savedLanguage &&
+      supportedLanguages.includes(savedLanguage)
+    ) {
+      return savedLanguage;
+    }
+  } catch(e) {}
+
+  const browserLanguage = (navigator.language || "")
+    .toLowerCase()
+    .split("-")[0];
+
+  if (supportedLanguages.includes(browserLanguage)) {
+    return browserLanguage;
+  }
+
+  return "en";
+}
+
 
 function fillSelect(id, opts){
   const sel = document.getElementById(id);
   if (!sel) return;
+
   const current = sel.value;
   sel.innerHTML = "";
+
   opts.forEach((label, i)=>{
     const o = document.createElement("option");
     o.value = i;
     o.textContent = label;
     sel.appendChild(o);
   });
+
   if (current !== "") sel.value = current;
 }
+
 
 function updateLocketScroll(){
   const section = document.getElementById("locket-scroll");
   if (!section) return;
+
   const frames = document.querySelectorAll(".locket-frame");
   const rect = section.getBoundingClientRect();
   const total = section.offsetHeight - window.innerHeight;
+
   let progress = total > 0 ? -rect.top / total : 0;
   progress = Math.max(0, Math.min(1, progress));
 
   const n = frames.length;
   const pos = progress * (n - 1);
-  const idx = Math.min(Math.floor(pos), n - 2 < 0 ? 0 : n - 2);
+  const idx = Math.min(
+    Math.floor(pos),
+    n - 2 < 0 ? 0 : n - 2
+  );
   const blend = pos - idx;
 
   frames.forEach((f, i) => {
@@ -268,10 +277,17 @@ function updateLocketScroll(){
   const dominant = blend < 0.5 ? idx : idx + 1;
   const caption = document.getElementById("locket-caption");
   const key = `loc_cap_${dominant}`;
-  if (caption && caption.getAttribute("data-current") !== key){
+
+  if (
+    caption &&
+    caption.getAttribute("data-current") !== key
+  ){
     caption.setAttribute("data-current", key);
-    const t = translations[window.__currentLang || "de"];
+
+    const t = translations[window.__currentLang || "en"];
+
     caption.style.opacity = 0;
+
     setTimeout(()=>{
       caption.textContent = t[key] || "";
       caption.style.opacity = 1;
@@ -279,61 +295,106 @@ function updateLocketScroll(){
   }
 }
 
+
 let locketTicking = false;
+
 function onLocketScroll(){
   if (!locketTicking){
     requestAnimationFrame(()=>{
       updateLocketScroll();
       locketTicking = false;
     });
+
     locketTicking = true;
   }
 }
-window.addEventListener("scroll", onLocketScroll, {passive:true});
-window.addEventListener("resize", updateLocketScroll);
-updateLocketScroll();
 
+
+window.addEventListener(
+  "scroll",
+  onLocketScroll,
+  {passive:true}
+);
+
+window.addEventListener(
+  "resize",
+  updateLocketScroll
+);
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-  let saved = "de";
-  try { saved = localStorage.getItem("viviere_lang") || "de"; } catch(e) {}
-  applyLang(translations[saved] ? saved : "de");
 
+  // ==========================================
+  // LANGUAGE INITIALIZATION
+  // Manual choice -> Browser language -> English
+  // ==========================================
+  const initialLanguage = getInitialLanguage();
+
+  // Do NOT save automatically detected language.
+  applyLang(initialLanguage, false);
+
+
+  // Manual language selection
   document.querySelectorAll(".langs button").forEach(b=>{
     b.addEventListener("click", ()=>{
-      applyLang(b.dataset.lang);
-      document.querySelector(".lang-switch").removeAttribute("open");
+      const selectedLanguage = b.dataset.lang;
+
+      if (!supportedLanguages.includes(selectedLanguage)) {
+        return;
+      }
+
+      // Manual selections ARE saved.
+      applyLang(selectedLanguage, true);
+
+      const switcher = document.querySelector(".lang-switch");
+
+      if (switcher) {
+        switcher.removeAttribute("open");
+      }
     });
   });
 
+
   // scroll reveal
   const beats = document.querySelectorAll(".beat");
+
   if ("IntersectionObserver" in window){
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
-        if (entry.isIntersecting) entry.target.classList.add("visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
       });
-    }, { threshold: 0.35 });
-    beats.forEach(b=> io.observe(b));
+    }, {
+      threshold: 0.35
+    });
+
+    beats.forEach(b=>io.observe(b));
   } else {
-    beats.forEach(b=> b.classList.add("visible"));
+    beats.forEach(b=>b.classList.add("visible"));
   }
+
 
   // questionnaire -> mailto
   const form = document.getElementById("questionnaire");
+
   if (form){
     form.addEventListener("submit", (e)=>{
       e.preventDefault();
-      const t = translations[window.__currentLang || "de"];
+
+      const t = translations[window.__currentLang || "en"];
+
       const name = form.name.value.trim();
       const email = form.email.value.trim();
-      const occasion = t.f_occasion_opts[form.occasion.value] || "";
+      const occasion =
+        t.f_occasion_opts[form.occasion.value] || "";
       const materials = form.materials.value.trim();
-      const length = t.f_length_opts[form.length.value] || "";
+      const length =
+        t.f_length_opts[form.length.value] || "";
       const message = form.message.value.trim();
 
       const subject = `${t.mail_subject} ${name}`;
+
       const body =
 `${t.f_name}: ${name}
 ${t.f_email}: ${email}
@@ -346,23 +407,42 @@ ${materials}
 ${t.f_message}
 ${message}`;
 
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href =
+        `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 
- document.getElementById("play-btn")?.addEventListener("click", function(){
-  const wrap = document.getElementById("video-wrap");
-  const poster = wrap.querySelector(".video-poster");
-  const iframe = document.createElement("iframe");
-  //iframe.src = "https://www.youtube.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
-  iframe.src = "https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0";
-  iframe.title = "Viviré — promo video";
-  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-  iframe.allowFullscreen = true;
-  iframe.style.border = "0";
-  iframe.width = "100%";
-  iframe.height = "100%";
-  poster.replaceWith(iframe);
-  this.remove();
-});
+
+  document
+    .getElementById("play-btn")
+    ?.addEventListener("click", function(){
+
+      const wrap = document.getElementById("video-wrap");
+      if (!wrap) return;
+
+      const poster = wrap.querySelector(".video-poster");
+      if (!poster) return;
+
+      const iframe = document.createElement("iframe");
+
+      //iframe.src = "https://www.youtube.com/embed/xjM4v2g9kQc?autoplay=1&rel=0";
+      iframe.src =
+        "https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID?autoplay=1&rel=0";
+
+      iframe.title = "Viviré — promo video";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.style.border = "0";
+      iframe.width = "100%";
+      iframe.height = "100%";
+
+      poster.replaceWith(iframe);
+      this.remove();
+    });
+
+
+  // Initialize locket after language has been established.
+  updateLocketScroll();
+
 });
